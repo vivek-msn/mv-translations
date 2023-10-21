@@ -42,7 +42,10 @@ if( !class_exists( 'MV_Translations' )){
 			$this->define_constants(); 
 
             require_once( MV_TRANSLATIONS_PATH . "post-types/class.mv-translations-cpt.php" );
-            $MVtranslationsPostType = new MV_Translations_Post_Type();			
+            $MVTranslationsPostType = new MV_Translations_Post_Type();		
+            
+            require_once( MV_TRANSLATIONS_PATH . "shortcodes/class.mv-translations_shortcode.php" );
+            $MVTranslationsShortcode = new MV_Translations_Shortcode();	
 		}
 
 		public function define_constants(){
